@@ -44,7 +44,7 @@
 
   Todos os parâmetros deste método são passados via query e não é necessário passar a tag [FromQuery] a API já busca na query por padrão, mas isso faz com que objetos complexos não possam ser utilizados como parâmetros de métodos GET.
 
-    4.1.1 EsseMetodoGetNaoServePraNada
+   4.1.1 EsseMetodoGetNaoServePraNada
       Apesar do nome ser uma brincadeira feita pra mostrar que este nome não é exibido no swagger e nem é necessário para fazer esta chamada, pois esse método não possui rota definida logo se torna o método padrão do verbo, este método retorna um usuário aleatório do banco e suas informações. 
       Um detalhe deste método é que é o único que eu uso o [FromService] para instanciar o ApiContext, apesar de já existir um objeto deste sendo criado no construtor da Controller eu criei ele aqui pra mostrar que você pode resolver injeção de dependência dentro do método (repare que esse parâmetro não é pedido na requisição do swagger).
       
