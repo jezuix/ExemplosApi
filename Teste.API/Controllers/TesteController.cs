@@ -366,7 +366,6 @@ namespace Teste.API.Controllers
                         {
                             carteiraSelecionada.ValorInvestido = carteira.ValorInvestido;
                             await _context.SaveChangesAsync();
-
                         }
                     }
 
