@@ -414,8 +414,8 @@ namespace Teste.API.Controllers
         }
 
         [HttpDelete]
-        [Route("DeletaUsuario")]
-        public async Task<IActionResult> DeletaUsuario(Guid usuarioId, bool temCerteza = false)
+        [Route("DeletaUsuario/{usuarioId}")]
+        public async Task<IActionResult> DeletaUsuario([FromRoute] Guid usuarioId, bool temCerteza = false)
         {
             try
             {
